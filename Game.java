@@ -42,11 +42,11 @@ public class Game extends Canvas implements Runnable,KeyListener{
     if(right){
       nodeSnake[0].x+=spd;
     }else if(up){
-      nodeSnake[0].y-=spd; 
+      nodeSnake[0].y-=spd;
     }else if(down){
-      nodeSnake[0].y+=spd; 
+      nodeSnake[0].y+=spd;
     }else if(left){
-      nodeSnake[0].x-=spd; 
+      nodeSnake[0].x-=spd;
     }
 
     if(new Rectangle(nodeSnake[0].x,nodeSnake[0].y,10,10).intersects(new Rectangle(macaX,macaY,10,10)))
@@ -76,12 +76,12 @@ public class Game extends Canvas implements Runnable,KeyListener{
 
     g.dispose();
     bs.show();
-  
+
   }
 
 public static void main(String[] args) {
   Game game = new Game();
-  JFrame frame = new JFrame("Snake"); 
+  JFrame frame = new JFrame("Snake");
   frame.add(game);
   frame.setResizable(false);
   frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -102,9 +102,9 @@ public static void main(String[] args) {
     } catch(InterruptedException e) {
       e.printStackTrace();
     }
-    
+
   }
-  
+
 
 
 @Override
@@ -136,17 +136,14 @@ public void keyPressed(keyEvent e){
 @Override
 public void keyTyped(KeyEvent e) {
   // TODO Auto-generated method stub
-  
 }
 
 @Override
 public void keyPressed(KeyEvent e) {
   // TODO Auto-generated method stub
-  
 }
 
 @Override
 public void keyReleased(KeyEvent e) {
   // TODO Auto-generated method stub
-  
 }
